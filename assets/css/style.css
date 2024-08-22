@@ -1,0 +1,162 @@
+/* Hide horizontal scrollbar but allow horizontal scrolling */
+.no-scrollbar {
+	overflow-x: auto;
+	overflow-y: auto; /* Hide vertical scrollbar if not needed */
+	white-space: nowrap; /* Prevent wrapping of content */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+::-webkit-scrollbar {
+	width: 2px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #2a9d8f;
+	border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #2a9d8f;
+}
+
+.bg-violet {
+	background: linear-gradient(
+		0deg,
+		rgba(98, 58, 116, 1) 0%,
+		rgba(116, 49, 147, 1) 100%
+	);
+}
+
+.glass {
+	background: rgba(0, 0, 0, 0.28);
+	border-radius: 20px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.1px);
+	-webkit-backdrop-filter: blur(5.1px);
+}
+
+.navbar-toggler {
+	border: none;
+	background: transparent;
+	padding: 0px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+	box-shadow: none;
+	outline: none;
+}
+
+.status-dot {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.status-dot.online {
+	background-color: rgb(98, 226, 98);
+}
+
+.status-dot.offline {
+	background-color: rgb(202, 63, 63);
+}
+
+.input-fit {
+	width: auto;
+	max-width: 100%;
+	padding: 0.2rem 0.4rem;
+	box-sizing: border-box;
+}
+
+/* CARD IMAGE STYLES */
+
+/* Make the table header sticky */
+.table thead th {
+	position: sticky;
+	top: 0; /* Stick the header to the top of the table */
+	background-color: #fff; /* Ensure the header has a background */
+	z-index: 10; /* Ensure the header stays on top of other content */
+}
+
+/* Optional: Styling for the table header */
+.table thead th {
+	background-color: #f8f9fa; /* Light background for better visibility */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for better separation */
+}
+
+.navbar-toggler-icon {
+	color: white;
+}
+
+.bg-blu{
+  background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #a6adb4, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #969ea7, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bg-dark {
+	background: rgb(70, 58, 116);
+	background: linear-gradient(
+		0deg,
+		rgba(70, 58, 116, 1) 0%,
+		rgba(111, 146, 154, 1) 100%
+	);
+}
+.bg-metalic{
+  background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bg-stripe {
+	background-color: #0093e9;
+	background-image: linear-gradient(160deg, #0093e9 0%, #658bb6 100%);
+}
+
+.bg-olive {
+	background: rgb(42, 157, 143);
+	background: linear-gradient(
+		0deg,
+		rgba(42, 157, 143, 1) 0%,
+		rgba(42, 157, 143, 1) 100%
+	);
+}
+.web-2{
+  background: #2c3e50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+.web-1{background: #134E5E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+.web-3{
+ 
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+.glass {
+	/* From https://css.glass */
+	background: rgba(77, 128, 166, 0.43);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid rgba(77, 128, 166, 0.3);
+}
